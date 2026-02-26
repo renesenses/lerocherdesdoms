@@ -30,18 +30,4 @@ document.addEventListener('DOMContentLoaded', function () {
     setInterval(function () { showSlide(current + 1); }, 5000);
   }
 
-  // --- Contact form (static demo) ---
-  var form = document.getElementById('contact-form');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var msg = document.createElement('p');
-      msg.style.color = '#d50';
-      msg.style.fontWeight = 'bold';
-      msg.style.marginTop = '1em';
-      msg.textContent = 'Merci pour votre message ! (Formulaire de démonstration)';
-      form.parentNode.insertBefore(msg, form.nextSibling);
-      form.reset();
-    });
-  }
 });
