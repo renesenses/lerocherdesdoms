@@ -254,8 +254,13 @@ Laurence Boyenval 06 87 35 45 93</div>
 
             <div class="widget">
               <h4 class="widget-title">Newsletter</h4>
-              <form class="newsletter-form" onsubmit="return false;">
-                <input type="email" placeholder="Votre email" aria-label="Email pour la newsletter">
+              <form class="newsletter-form" action="https://formsubmit.co/cielerocherdesdoms@orange.fr" method="POST">
+                <input type="hidden" name="_subject" value="Nouvelle inscription newsletter — Le Rocher des Doms">
+                <input type="hidden" name="_next" value="https://renesenses.github.io/lerocherdesdoms/index.html">
+                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_template" value="table">
+                <input type="text" name="_honey" style="display:none">
+                <input type="email" name="email" placeholder="Votre email" aria-label="Email pour la newsletter" required>
                 <button type="submit">S'inscrire</button>
               </form>
             </div>
